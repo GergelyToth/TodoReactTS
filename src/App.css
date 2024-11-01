@@ -1,14 +1,30 @@
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-.card {
-  padding: 2em;
+header {
+  background-color: var(--color-gray-700);
+  display: flex;
+  height: 200px;
+  place-items: center;
+  text-align: center;
 }
 
-.read-the-docs {
-  color: #888;
+h1 {
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+  max-width: 736px;
+  margin: -27px auto 0;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }

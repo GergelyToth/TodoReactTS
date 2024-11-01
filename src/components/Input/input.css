@@ -1,0 +1,21 @@
+.Input {
+  border: 0;
+  border-radius: 8px;
+  color: var(--color-gray-100);
+  display: block;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 140%;
+  padding: 1rem;
+  width: 100%;
+}
+
+.Input::placeholder {
+  color: var(--color-gray-300);
+}
+
+.Input:focus {
+  outline-color: var(--color-purple-dark);
+  outline-style: solid;
+  outline-width: 1px;
+}

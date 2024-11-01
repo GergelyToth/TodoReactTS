@@ -1,25 +1,27 @@
-import { useState } from 'react'
-import './App.css'
+import { useState } from 'react';
+import Input from './components/Input';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [newTaskValue, setNewTaskValue] = useState('');
 
   return (
     <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+        <h1>Todo</h1>
+        {/* Add logo */}
+      </header>
+      <main>
+        <div className='wrapper'>
+          <Input
+            placeholder="Add a new task"
+            value={newTaskValue}
+            onChange={(value) => {setNewTaskValue(value)}}
+          />
+        </div>
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
