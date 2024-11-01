@@ -1,0 +1,67 @@
+.Task {
+  display: flex;
+  place-items: start center;
+  gap: 12px;
+  padding: 16px;
+  background-color: var(--color-gray-500);
+  border: 1px solid var(--color-gray-400);
+  border-radius: 8px;
+  margin: 16px 0;
+  color: var(--color-gray-100);
+  text-align: left;
+}
+
+.Task.completed {
+  border-color: var(--color-gray-500);
+  color: var(--color-gray-300);
+  text-decoration: line-through;
+}
+
+.Task span {
+  flex-grow: 1;
+}
+
+.Task input,
+.Task button {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.Task input[type="checkbox"] {
+  border: 1px solid var(--color-blue);
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 3rem;
+}
+
+.Task button {
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: 0;
+  border-radius: 4px;
+  width: 1.5rem;
+  height: 1.5rem;
+  position: relative;
+}
+
+.Task button:hover {
+  background-color: var(--color-gray-400);
+}
+
+.Task button img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Task button img.default,
+.Task button:hover img.hover {
+  display: inline;
+}
+
+.Task button:hover img.default,
+.Task button img.hover {
+  display: none;
+}
