@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: var(--default-font);
   font-optical-sizing: auto;
   line-height: 1.5;
   font-weight: 400;
@@ -16,6 +16,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Variables */
+  --default-font: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   /* Product colours */
   --color-purple: #8284FA;
   --color-purple-dark: #5E60CE;
